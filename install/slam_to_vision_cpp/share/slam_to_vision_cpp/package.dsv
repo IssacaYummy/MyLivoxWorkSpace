@@ -1,0 +1,8 @@
+source;share/slam_to_vision_cpp/hook/cmake_prefix_path.ps1
+source;share/slam_to_vision_cpp/hook/cmake_prefix_path.dsv
+source;share/slam_to_vision_cpp/hook/cmake_prefix_path.sh
+source;share/slam_to_vision_cpp/local_setup.bash
+source;share/slam_to_vision_cpp/local_setup.dsv
+source;share/slam_to_vision_cpp/local_setup.ps1
+source;share/slam_to_vision_cpp/local_setup.sh
+source;share/slam_to_vision_cpp/local_setup.zsh

@@ -1,0 +1,143 @@
+[0mCurrent CPU archtecture: x86_64[0m
+[0mProcesser number:  32[0m
+[0mcore for MP: 3[0m
+[33mCMake Warning (dev) at CMakeLists.txt:81 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[0mEigen:/usr/include/eigen3[0m
+Traceback (most recent call last):
+  File "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 28, in <module>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c", line 33, in <module>
+  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 31, in <module>
+gmake[2]: *** 正在删除文件“rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp”
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c", line 24, in main
+gmake[2]: *** 正在删除文件“rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp”
+    sys.exit(main())
+  File "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c", line 29, in main
+    sys.exit(main())
+    generate_c(args.generator_arguments_file, args.typesupports)
+  File "/opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c", line 27, in main
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_c/__init__.py", line 28, in generate_c
+    generate_typesupport_fastrtps_c(args.generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_c/__init__.py", line 24, in generate_typesupport_fastrtps_c
+    generate_c(args.generator_arguments_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_c/__init__.py", line 31, in generate_c
+    return generate_files(
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    return generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    return generate_files(generator_arguments_file, mapping)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 74, in generate_files
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    idl_file = parse_idl_file(locator)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 64, in parse_idl_file
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    content = parse_idl_string(string, png_file=png_file)
+    content = parse_idl_string(string, png_file=png_file)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 72, in parse_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 88, in get_ast_from_idl_string
+    tree = get_ast_from_idl_string(idl_string)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 88, in get_ast_from_idl_string
+    _parser = Lark(grammar, start='specification', maybe_placeholders=False)
+    tree = get_ast_from_idl_string(idl_string)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 333, in __init__
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_parser/parser.py", line 88, in get_ast_from_idl_string
+    _parser = Lark(grammar, start='specification', maybe_placeholders=False)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 333, in __init__
+    _parser = Lark(grammar, start='specification', maybe_placeholders=False)
+  File "/usr/lib/python3/dist-packages/lark/lark.py", line 333, in __init__
+    self.grammar, used_files = load_grammar(grammar, self.source_path, self.options.import_paths, self.options.keep_all_tokens)
+    self.grammar, used_files = load_grammar(grammar, self.source_path, self.options.import_paths, self.options.keep_all_tokens)
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1408, in load_grammar
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1408, in load_grammar
+    self.grammar, used_files = load_grammar(grammar, self.source_path, self.options.import_paths, self.options.keep_all_tokens)
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1408, in load_grammar
+gmake[2]: *** [CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/build.make:85: rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp] 中断
+gmake[2]: *** [CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/build.make:85: CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:370: CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/all] 中断
+    builder.load_grammar(grammar, source)
+    builder.load_grammar(grammar, source)
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1233, in load_grammar
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1233, in load_grammar
+    builder.load_grammar(grammar, source)
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 1233, in load_grammar
+    tree = _parse_grammar(grammar_text, grammar_name)
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 961, in _parse_grammar
+gmake[1]: *** [CMakeFiles/Makefile2:397: CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/all] 中断
+    tree = _parse_grammar(grammar_text, grammar_name)
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 961, in _parse_grammar
+    tree = _parse_grammar(grammar_text, grammar_name)
+  File "/usr/lib/python3/dist-packages/lark/load_grammar.py", line 961, in _parse_grammar
+    tree = _get_parser().parse(text + '\n', start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+    tree = _get_parser().parse(text + '\n', start)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+    tree = _get_parser().parse(text + '\n', start)
+    return self.parser.parse(stream, chosen_start, **kw)
+    return self.parser.parse(stream, chosen_start, **kw)
+  File "/usr/lib/python3/dist-packages/lark/parser_frontends.py", line 99, in parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 41, in parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 41, in parse
+    return self.parser.parse(stream, chosen_start, **kw)
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 41, in parse
+    return self.parser.parse(lexer, start)
+    return self.parser.parse(lexer, start)
+    return self.parser.parse(lexer, start)
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 171, in parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 171, in parse
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 171, in parse
+    return self.parse_from_state(parser_state)
+    return self.parse_from_state(parser_state)
+    return self.parse_from_state(parser_state)
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 178, in parse_from_state
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 179, in parse_from_state
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 179, in parse_from_state
+    for token in state.lexer.lex(state):
+  File "/usr/lib/python3/dist-packages/lark/lexer.py", line 453, in lex
+    state.feed_token(token)
+    state.feed_token(token)
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 131, in feed_token
+  File "/usr/lib/python3/dist-packages/lark/parsers/lalr_parser.py", line 150, in feed_token
+    value = callbacks[rule](s)
+    assert arg != end_state
+  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 113, in __hash__
+  File "/usr/lib/python3/dist-packages/lark/grammar.py", line 117, in __eq__
+    yield self.next_token(state, parser_state)
+  File "/usr/lib/python3/dist-packages/lark/lexer.py", line 458, in next_token
+    res = self.match(lex_state.text, line_ctr.char_pos)
+  File "/usr/lib/python3/dist-packages/lark/lexer.py", line 448, in match
+    def __hash__(self):
+    if not isinstance(other, Rule):
+KeyboardInterrupt
+KeyboardInterrupt
+    return self.scanner.match(text, pos)
+  File "/usr/lib/python3/dist-packages/lark/lexer.py", line 313, in match
+    m = mre.match(text, pos)
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/build.make:82: rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:292: CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/all] 中断
+gmake[2]: *** [CMakeFiles/fast_lio__rosidl_typesupport_c.dir/build.make:80: rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:344: CMakeFiles/fast_lio__rosidl_typesupport_c.dir/all] 中断
+gmake[2]: *** [CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/build.make:82: rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:318: CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/all] 中断
+gmake[2]: *** [CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/build.make:82: rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:240: CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

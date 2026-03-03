@@ -1,0 +1,6 @@
+Invoking command in '/home/yummy/livox_ws/build/slam_to_vision_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yummy/livox_ws/src/slam_to_vision_cpp -DCMAKE_INSTALL_PREFIX=/home/yummy/livox_ws/install/slam_to_vision_cpp
+Invoked command in '/home/yummy/livox_ws/build/slam_to_vision_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yummy/livox_ws/src/slam_to_vision_cpp -DCMAKE_INSTALL_PREFIX=/home/yummy/livox_ws/install/slam_to_vision_cpp
+Invoking command in '/home/yummy/livox_ws/build/slam_to_vision_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yummy/livox_ws/build/slam_to_vision_cpp -- -j32 -l32
+Invoked command in '/home/yummy/livox_ws/build/slam_to_vision_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yummy/livox_ws/build/slam_to_vision_cpp -- -j32 -l32
+Invoking command in '/home/yummy/livox_ws/build/slam_to_vision_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yummy/livox_ws/build/slam_to_vision_cpp
+Invoked command in '/home/yummy/livox_ws/build/slam_to_vision_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yummy/livox_ws/build/slam_to_vision_cpp
