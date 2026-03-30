@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yummy/livox_ws/src/FAST_LIO
+CMAKE_SOURCE_DIR = /home/scurm/MyLivoxWorkSpace/src/FAST_LIO_ROS2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yummy/livox_ws/build/fast_lio
+CMAKE_BINARY_DIR = /home/scurm/MyLivoxWorkSpace/build/fast_lio
 
 # Utility rule file for fast_lio_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/fast_lio_uninstall.dir/compiler_depend.make
 include CMakeFiles/fast_lio_uninstall.dir/progress.make
 
 CMakeFiles/fast_lio_uninstall:
-	/usr/bin/cmake -P /home/yummy/livox_ws/build/fast_lio/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/scurm/MyLivoxWorkSpace/build/fast_lio/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 fast_lio_uninstall: CMakeFiles/fast_lio_uninstall
 fast_lio_uninstall: CMakeFiles/fast_lio_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/fast_lio_uninstall.dir/clean:
 .PHONY : CMakeFiles/fast_lio_uninstall.dir/clean
 
 CMakeFiles/fast_lio_uninstall.dir/depend:
-	cd /home/yummy/livox_ws/build/fast_lio && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yummy/livox_ws/src/FAST_LIO /home/yummy/livox_ws/src/FAST_LIO /home/yummy/livox_ws/build/fast_lio /home/yummy/livox_ws/build/fast_lio /home/yummy/livox_ws/build/fast_lio/CMakeFiles/fast_lio_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/scurm/MyLivoxWorkSpace/build/fast_lio && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/scurm/MyLivoxWorkSpace/src/FAST_LIO_ROS2 /home/scurm/MyLivoxWorkSpace/src/FAST_LIO_ROS2 /home/scurm/MyLivoxWorkSpace/build/fast_lio /home/scurm/MyLivoxWorkSpace/build/fast_lio /home/scurm/MyLivoxWorkSpace/build/fast_lio/CMakeFiles/fast_lio_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fast_lio_uninstall.dir/depend
 

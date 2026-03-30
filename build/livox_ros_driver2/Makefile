@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yummy/livox_ws/src/livox_ros_driver2
+CMAKE_SOURCE_DIR = /home/scurm/MyLivoxWorkSpace/src/livox_ros_driver2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yummy/livox_ws/build/livox_ros_driver2
+CMAKE_BINARY_DIR = /home/scurm/MyLivoxWorkSpace/build/livox_ros_driver2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yummy/livox_ws/build/livox_ros_driver2/CMakeFiles /home/yummy/livox_ws/build/livox_ros_driver2//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/scurm/MyLivoxWorkSpace/build/livox_ros_driver2/CMakeFiles /home/scurm/MyLivoxWorkSpace/build/livox_ros_driver2//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yummy/livox_ws/build/livox_ros_driver2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/scurm/MyLivoxWorkSpace/build/livox_ros_driver2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -315,17 +315,17 @@ livox_interfaces2__rosidl_typesupport_cpp/fast:
 .PHONY : livox_interfaces2__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_livox_ros_driver2
+# Target rules for targets named ament_cmake_python_copy_livox_ros_driver2
 
 # Build rule for target.
-ament_cmake_python_symlink_livox_ros_driver2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_livox_ros_driver2
-.PHONY : ament_cmake_python_symlink_livox_ros_driver2
+ament_cmake_python_copy_livox_ros_driver2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_livox_ros_driver2
+.PHONY : ament_cmake_python_copy_livox_ros_driver2
 
 # fast build rule for target.
-ament_cmake_python_symlink_livox_ros_driver2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_livox_ros_driver2.dir/build.make CMakeFiles/ament_cmake_python_symlink_livox_ros_driver2.dir/build
-.PHONY : ament_cmake_python_symlink_livox_ros_driver2/fast
+ament_cmake_python_copy_livox_ros_driver2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_livox_ros_driver2.dir/build.make CMakeFiles/ament_cmake_python_copy_livox_ros_driver2.dir/build
+.PHONY : ament_cmake_python_copy_livox_ros_driver2/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_livox_ros_driver2_egg
@@ -430,6 +430,19 @@ livox_interfaces2__py: cmake_check_build_system
 livox_interfaces2__py/fast:
 	$(MAKE) $(MAKESILENT) -f livox_interfaces2__py/CMakeFiles/livox_interfaces2__py.dir/build.make livox_interfaces2__py/CMakeFiles/livox_interfaces2__py.dir/build
 .PHONY : livox_interfaces2__py/fast
+
+#=============================================================================
+# Target rules for targets named livox_interfaces2__rs
+
+# Build rule for target.
+livox_interfaces2__rs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 livox_interfaces2__rs
+.PHONY : livox_interfaces2__rs
+
+# fast build rule for target.
+livox_interfaces2__rs/fast:
+	$(MAKE) $(MAKESILENT) -f livox_interfaces2__rs/CMakeFiles/livox_interfaces2__rs.dir/build.make livox_interfaces2__rs/CMakeFiles/livox_interfaces2__rs.dir/build
+.PHONY : livox_interfaces2__rs/fast
 
 rclcpp_components/node_main_livox_ros_driver2_node.o: rclcpp_components/node_main_livox_ros_driver2_node.cpp.o
 .PHONY : rclcpp_components/node_main_livox_ros_driver2_node.o
@@ -1285,10 +1298,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_livox_ros_driver2_egg"
-	@echo "... ament_cmake_python_symlink_livox_ros_driver2"
+	@echo "... ament_cmake_python_copy_livox_ros_driver2"
 	@echo "... livox_interfaces2"
 	@echo "... livox_interfaces2__cpp"
 	@echo "... livox_interfaces2__py"
+	@echo "... livox_interfaces2__rs"
 	@echo "... livox_ros_driver2_uninstall"
 	@echo "... uninstall"
 	@echo "... livox_interfaces2__rosidl_generator_c"

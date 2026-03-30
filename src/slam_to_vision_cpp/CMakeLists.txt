@@ -10,6 +10,9 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -29,6 +32,9 @@ ament_target_dependencies(slam_to_vision_node
   rclcpp
   nav_msgs
   geometry_msgs
+  tf2
+  tf2_ros
+  tf2_geometry_msgs
 )
 
 install(TARGETS slam_to_vision_node

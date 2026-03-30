@@ -1,1 +1,1 @@
-/home/yummy/livox_ws/build/fast_lio/rosidl_generator_py/fast_lio/msg/__init__.py
+from fast_lio.msg._pose6_d import Pose6D  # noqa: F401

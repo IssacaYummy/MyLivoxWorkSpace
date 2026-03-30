@@ -1,0 +1,6 @@
+Invoking command in '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/scurm/MyLivoxWorkSpace/src/slam_to_vision_cpp -DCMAKE_INSTALL_PREFIX=/home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp
+Invoked command in '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/scurm/MyLivoxWorkSpace/src/slam_to_vision_cpp -DCMAKE_INSTALL_PREFIX=/home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp
+Invoking command in '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp -- -j20 -l20
+Invoked command in '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp -- -j20 -l20
+Invoking command in '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp
+Invoked command in '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp

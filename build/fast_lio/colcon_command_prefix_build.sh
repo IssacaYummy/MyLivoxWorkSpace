@@ -1,2 +1,2 @@
 # generated from colcon_core/shell/template/command_prefix.sh.em
-. "/home/yummy/livox_ws/install/livox_ros_driver2/share/livox_ros_driver2/package.sh"
+. "/home/scurm/MyLivoxWorkSpace/install/livox_ros_driver2/share/livox_ros_driver2/package.sh"

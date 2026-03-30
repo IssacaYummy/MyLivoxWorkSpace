@@ -1,6 +1,6 @@
 {
   "package_name": "fast_lio",
   "non_idl_tuples": [
-    "/home/yummy/livox_ws/src/FAST_LIO:msg/Pose6D.msg"
+    "/home/scurm/MyLivoxWorkSpace/src/FAST_LIO_ROS2:msg/Pose6D.msg"
   ]
 }

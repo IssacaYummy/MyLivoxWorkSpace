@@ -1,1 +1,2 @@
-/home/yummy/livox_ws/build/livox_ros_driver2/rosidl_generator_py/livox_ros_driver2/msg/__init__.py
+from livox_ros_driver2.msg._custom_msg import CustomMsg  # noqa: F401
+from livox_ros_driver2.msg._custom_point import CustomPoint  # noqa: F401

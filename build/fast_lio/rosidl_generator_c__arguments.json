@@ -1,9 +1,9 @@
 {
   "package_name": "fast_lio",
-  "output_dir": "/home/yummy/livox_ws/build/fast_lio/rosidl_generator_c/fast_lio",
+  "output_dir": "/home/scurm/MyLivoxWorkSpace/build/fast_lio/rosidl_generator_c/fast_lio",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
-    "/home/yummy/livox_ws/build/fast_lio/rosidl_adapter/fast_lio:msg/Pose6D.idl"
+    "/home/scurm/MyLivoxWorkSpace/build/fast_lio/rosidl_adapter/fast_lio:msg/Pose6D.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
@@ -19,6 +19,6 @@
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
     "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
-    "/home/yummy/livox_ws/build/fast_lio/rosidl_adapter/fast_lio/msg/Pose6D.idl"
+    "/home/scurm/MyLivoxWorkSpace/build/fast_lio/rosidl_adapter/fast_lio/msg/Pose6D.idl"
   ]
 }

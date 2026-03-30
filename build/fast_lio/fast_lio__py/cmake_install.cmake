@@ -1,8 +1,8 @@
-# Install script for directory: /home/yummy/livox_ws/build/fast_lio/fast_lio__py
+# Install script for directory: /home/scurm/MyLivoxWorkSpace/build/fast_lio/fast_lio__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yummy/livox_ws/install/fast_lio")
+  set(CMAKE_INSTALL_PREFIX "/home/scurm/MyLivoxWorkSpace/install/fast_lio")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

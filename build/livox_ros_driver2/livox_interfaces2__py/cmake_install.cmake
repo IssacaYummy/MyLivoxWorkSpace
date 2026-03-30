@@ -1,8 +1,8 @@
-# Install script for directory: /home/yummy/livox_ws/build/livox_ros_driver2/livox_interfaces2__py
+# Install script for directory: /home/scurm/MyLivoxWorkSpace/build/livox_ros_driver2/livox_interfaces2__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yummy/livox_ws/install/livox_ros_driver2")
+  set(CMAKE_INSTALL_PREFIX "/home/scurm/MyLivoxWorkSpace/install/livox_ros_driver2")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

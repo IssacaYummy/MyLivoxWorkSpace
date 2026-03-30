@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yummy/livox_ws/src/FAST_LIO
+CMAKE_SOURCE_DIR = /home/scurm/MyLivoxWorkSpace/src/FAST_LIO_ROS2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yummy/livox_ws/build/fast_lio
+CMAKE_BINARY_DIR = /home/scurm/MyLivoxWorkSpace/build/fast_lio
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yummy/livox_ws/build/fast_lio/CMakeFiles /home/yummy/livox_ws/build/fast_lio//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/scurm/MyLivoxWorkSpace/build/fast_lio/CMakeFiles /home/scurm/MyLivoxWorkSpace/build/fast_lio//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yummy/livox_ws/build/fast_lio/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/scurm/MyLivoxWorkSpace/build/fast_lio/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -315,17 +315,17 @@ fast_lio__rosidl_typesupport_cpp/fast:
 .PHONY : fast_lio__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_fast_lio
+# Target rules for targets named ament_cmake_python_copy_fast_lio
 
 # Build rule for target.
-ament_cmake_python_symlink_fast_lio: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_fast_lio
-.PHONY : ament_cmake_python_symlink_fast_lio
+ament_cmake_python_copy_fast_lio: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_fast_lio
+.PHONY : ament_cmake_python_copy_fast_lio
 
 # fast build rule for target.
-ament_cmake_python_symlink_fast_lio/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_fast_lio.dir/build.make CMakeFiles/ament_cmake_python_symlink_fast_lio.dir/build
-.PHONY : ament_cmake_python_symlink_fast_lio/fast
+ament_cmake_python_copy_fast_lio/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_fast_lio.dir/build.make CMakeFiles/ament_cmake_python_copy_fast_lio.dir/build
+.PHONY : ament_cmake_python_copy_fast_lio/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_fast_lio_egg
@@ -417,6 +417,19 @@ fast_lio__py: cmake_check_build_system
 fast_lio__py/fast:
 	$(MAKE) $(MAKESILENT) -f fast_lio__py/CMakeFiles/fast_lio__py.dir/build.make fast_lio__py/CMakeFiles/fast_lio__py.dir/build
 .PHONY : fast_lio__py/fast
+
+#=============================================================================
+# Target rules for targets named fast_lio__rs
+
+# Build rule for target.
+fast_lio__rs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fast_lio__rs
+.PHONY : fast_lio__rs
+
+# fast build rule for target.
+fast_lio__rs/fast:
+	$(MAKE) $(MAKESILENT) -f fast_lio__rs/CMakeFiles/fast_lio__rs.dir/build.make fast_lio__rs/CMakeFiles/fast_lio__rs.dir/build
+.PHONY : fast_lio__rs/fast
 
 include/ikd-Tree/ikd_Tree.o: include/ikd-Tree/ikd_Tree.cpp.o
 .PHONY : include/ikd-Tree/ikd_Tree.o
@@ -768,10 +781,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_fast_lio_egg"
-	@echo "... ament_cmake_python_symlink_fast_lio"
+	@echo "... ament_cmake_python_copy_fast_lio"
 	@echo "... fast_lio"
 	@echo "... fast_lio__cpp"
 	@echo "... fast_lio__py"
+	@echo "... fast_lio__rs"
 	@echo "... fast_lio_uninstall"
 	@echo "... uninstall"
 	@echo "... fast_lio__rosidl_generator_c"

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yummy/livox_ws/src/FAST_LIO
+CMAKE_SOURCE_DIR = /home/scurm/MyLivoxWorkSpace/src/FAST_LIO_ROS2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yummy/livox_ws/build/fast_lio
+CMAKE_BINARY_DIR = /home/scurm/MyLivoxWorkSpace/build/fast_lio
 
 # Utility rule file for ament_cmake_python_build_fast_lio_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_fast_lio_egg.dir/compiler_depend.mak
 include CMakeFiles/ament_cmake_python_build_fast_lio_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_fast_lio_egg:
-	cd /home/yummy/livox_ws/build/fast_lio/ament_cmake_python/fast_lio && /usr/bin/python3 setup.py egg_info
+	cd /home/scurm/MyLivoxWorkSpace/build/fast_lio/ament_cmake_python/fast_lio && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_fast_lio_egg: CMakeFiles/ament_cmake_python_build_fast_lio_egg
 ament_cmake_python_build_fast_lio_egg: CMakeFiles/ament_cmake_python_build_fast_lio_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_fast_lio_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_fast_lio_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_fast_lio_egg.dir/depend:
-	cd /home/yummy/livox_ws/build/fast_lio && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yummy/livox_ws/src/FAST_LIO /home/yummy/livox_ws/src/FAST_LIO /home/yummy/livox_ws/build/fast_lio /home/yummy/livox_ws/build/fast_lio /home/yummy/livox_ws/build/fast_lio/CMakeFiles/ament_cmake_python_build_fast_lio_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/scurm/MyLivoxWorkSpace/build/fast_lio && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/scurm/MyLivoxWorkSpace/src/FAST_LIO_ROS2 /home/scurm/MyLivoxWorkSpace/src/FAST_LIO_ROS2 /home/scurm/MyLivoxWorkSpace/build/fast_lio /home/scurm/MyLivoxWorkSpace/build/fast_lio /home/scurm/MyLivoxWorkSpace/build/fast_lio/CMakeFiles/ament_cmake_python_build_fast_lio_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_fast_lio_egg.dir/depend
 

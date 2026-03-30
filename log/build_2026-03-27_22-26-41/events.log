@@ -1,0 +1,96 @@
+[0.000000] (-) TimerEvent: {}
+[0.000175] (-) JobUnselected: {'identifier': 'fast_lio'}
+[0.000260] (-) JobUnselected: {'identifier': 'livox_ros_driver2'}
+[0.000286] (slam_to_vision_cpp) JobQueued: {'identifier': 'slam_to_vision_cpp', 'dependencies': OrderedDict()}
+[0.000315] (slam_to_vision_cpp) JobStarted: {'identifier': 'slam_to_vision_cpp'}
+[0.005898] (slam_to_vision_cpp) JobProgress: {'identifier': 'slam_to_vision_cpp', 'progress': 'cmake'}
+[0.006657] (slam_to_vision_cpp) JobProgress: {'identifier': 'slam_to_vision_cpp', 'progress': 'build'}
+[0.007390] (slam_to_vision_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp', '--', '-j20', '-l20'], 'cwd': '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'scurm'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/scurm'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.113.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2508'), ('SYSTEMD_EXEC_PID', '2904'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6031'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'scurm'), ('JOURNAL_STREAM', '8:9571'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'scurm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('CODELLDB_LAUNCH_CONNECT_FILE', '/home/scurm/.config/Code/User/workspaceStorage/fefd8b81609f60e4e282480673d2a7a6/vadimcn.vscode-lldb/rpcaddress.txt'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/scurm/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin:/home/scurm/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/scurm/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/scurm/.local/bin:/opt/ros/humble/bin:/home/scurm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/scurm:@/tmp/.ICE-unix/2870,unix/scurm:/tmp/.ICE-unix/2870'), ('INVOCATION_ID', '65254e8d100348d6a68066511db04266'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f1bb9a5c6b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.066103] (slam_to_vision_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target slam_to_vision_node\x1b[0m\n'}
+[0.090376] (slam_to_vision_cpp) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/slam_to_vision_node.dir/src/slam_to_vision_node.cpp.o\x1b[0m\n'}
+[0.099571] (-) TimerEvent: {}
+[0.199959] (-) TimerEvent: {}
+[0.300186] (-) TimerEvent: {}
+[0.400399] (-) TimerEvent: {}
+[0.500621] (-) TimerEvent: {}
+[0.600875] (-) TimerEvent: {}
+[0.701172] (-) TimerEvent: {}
+[0.801417] (-) TimerEvent: {}
+[0.901677] (-) TimerEvent: {}
+[1.001957] (-) TimerEvent: {}
+[1.102291] (-) TimerEvent: {}
+[1.202620] (-) TimerEvent: {}
+[1.302881] (-) TimerEvent: {}
+[1.403239] (-) TimerEvent: {}
+[1.503503] (-) TimerEvent: {}
+[1.603738] (-) TimerEvent: {}
+[1.703979] (-) TimerEvent: {}
+[1.804365] (-) TimerEvent: {}
+[1.904714] (-) TimerEvent: {}
+[2.004960] (-) TimerEvent: {}
+[2.105256] (-) TimerEvent: {}
+[2.205607] (-) TimerEvent: {}
+[2.305891] (-) TimerEvent: {}
+[2.406195] (-) TimerEvent: {}
+[2.506632] (-) TimerEvent: {}
+[2.606888] (-) TimerEvent: {}
+[2.709842] (-) TimerEvent: {}
+[2.810355] (-) TimerEvent: {}
+[2.910674] (-) TimerEvent: {}
+[3.011008] (-) TimerEvent: {}
+[3.111406] (-) TimerEvent: {}
+[3.211863] (-) TimerEvent: {}
+[3.312174] (-) TimerEvent: {}
+[3.412487] (-) TimerEvent: {}
+[3.512790] (-) TimerEvent: {}
+[3.613122] (-) TimerEvent: {}
+[3.713370] (-) TimerEvent: {}
+[3.813582] (-) TimerEvent: {}
+[3.913850] (-) TimerEvent: {}
+[4.014150] (-) TimerEvent: {}
+[4.114513] (-) TimerEvent: {}
+[4.214769] (-) TimerEvent: {}
+[4.315045] (-) TimerEvent: {}
+[4.415334] (-) TimerEvent: {}
+[4.515665] (-) TimerEvent: {}
+[4.615924] (-) TimerEvent: {}
+[4.716179] (-) TimerEvent: {}
+[4.816423] (-) TimerEvent: {}
+[4.916680] (-) TimerEvent: {}
+[5.016980] (-) TimerEvent: {}
+[5.117229] (-) TimerEvent: {}
+[5.217641] (-) TimerEvent: {}
+[5.317944] (-) TimerEvent: {}
+[5.418257] (-) TimerEvent: {}
+[5.518536] (-) TimerEvent: {}
+[5.618798] (-) TimerEvent: {}
+[5.700058] (slam_to_vision_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable slam_to_vision_node\x1b[0m\n'}
+[5.718892] (-) TimerEvent: {}
+[5.819144] (-) TimerEvent: {}
+[5.919508] (-) TimerEvent: {}
+[5.997105] (slam_to_vision_cpp) StdoutLine: {'line': b'[100%] Built target slam_to_vision_node\n'}
+[6.007449] (slam_to_vision_cpp) CommandEnded: {'returncode': 0}
+[6.008301] (slam_to_vision_cpp) JobProgress: {'identifier': 'slam_to_vision_cpp', 'progress': 'install'}
+[6.018405] (slam_to_vision_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp'], 'cwd': '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'scurm'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('HOME', '/home/scurm'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.113.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2508'), ('SYSTEMD_EXEC_PID', '2904'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6031'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'scurm'), ('JOURNAL_STREAM', '8:9571'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'scurm'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('CODELLDB_LAUNCH_CONNECT_FILE', '/home/scurm/.config/Code/User/workspaceStorage/fefd8b81609f60e4e282480673d2a7a6/vadimcn.vscode-lldb/rpcaddress.txt'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/scurm/.vscode/extensions/vadimcn.vscode-lldb-1.12.0/bin:/home/scurm/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/scurm/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/scurm/.local/bin:/opt/ros/humble/bin:/home/scurm/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/scurm:@/tmp/.ICE-unix/2870,unix/scurm:/tmp/.ICE-unix/2870'), ('INVOCATION_ID', '65254e8d100348d6a68066511db04266'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-f1bb9a5c6b.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.019766] (-) TimerEvent: {}
+[6.025910] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.026515] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Installing: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/lib/slam_to_vision_cpp/slam_to_vision_node\n'}
+[6.029305] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/lib/slam_to_vision_cpp/slam_to_vision_node" to ""\n'}
+[6.029745] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/ament_index/resource_index/package_run_dependencies/slam_to_vision_cpp\n'}
+[6.030149] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/ament_index/resource_index/parent_prefix_path/slam_to_vision_cpp\n'}
+[6.030269] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/ament_prefix_path.sh\n'}
+[6.030373] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/ament_prefix_path.dsv\n'}
+[6.030467] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/path.sh\n'}
+[6.030572] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/path.dsv\n'}
+[6.030688] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.bash\n'}
+[6.030850] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.sh\n'}
+[6.030963] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.zsh\n'}
+[6.031343] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.dsv\n'}
+[6.032021] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Installing: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/package.dsv\n'}
+[6.032679] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/ament_index/resource_index/packages/slam_to_vision_cpp\n'}
+[6.032917] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/cmake/slam_to_vision_cppConfig.cmake\n'}
+[6.033010] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/cmake/slam_to_vision_cppConfig-version.cmake\n'}
+[6.033171] (slam_to_vision_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/package.xml\n'}
+[6.033500] (slam_to_vision_cpp) CommandEnded: {'returncode': 0}
+[6.051565] (slam_to_vision_cpp) JobEnded: {'identifier': 'slam_to_vision_cpp', 'rc': 0}
+[6.052148] (-) EventReactorShutdown: {}

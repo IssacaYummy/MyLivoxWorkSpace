@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target slam_to_vision_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/slam_to_vision_node.dir/src/slam_to_vision_node.cpp.o[0m
+[01m[K/home/scurm/MyLivoxWorkSpace/src/slam_to_vision_cpp/src/slam_to_vision_node.cpp:[m[K In member function ‘[01m[Kvoid SlamToVisionNode::odomCallback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/scurm/MyLivoxWorkSpace/src/slam_to_vision_cpp/src/slam_to_vision_node.cpp:48:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KINV_SQRT2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   48 |   const double [01;35m[KINV_SQRT2[m[K = 1.0 / std::sqrt(2.0);
+      |                [01;35m[K^~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable slam_to_vision_node[0m
+[100%] Built target slam_to_vision_node
+-- Install configuration: ""
+-- Installing: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/lib/slam_to_vision_cpp/slam_to_vision_node
+-- Set runtime path of "/home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/lib/slam_to_vision_cpp/slam_to_vision_node" to ""
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/ament_index/resource_index/package_run_dependencies/slam_to_vision_cpp
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/ament_index/resource_index/parent_prefix_path/slam_to_vision_cpp
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/ament_prefix_path.sh
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/path.sh
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/path.dsv
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.bash
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.sh
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.zsh
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.dsv
+-- Installing: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/package.dsv
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/ament_index/resource_index/packages/slam_to_vision_cpp
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/cmake/slam_to_vision_cppConfig.cmake
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/cmake/slam_to_vision_cppConfig-version.cmake
+-- Up-to-date: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/package.xml

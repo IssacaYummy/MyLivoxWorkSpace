@@ -1,0 +1,26 @@
+[0.010s] Invoking command in '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp -- -j20 -l20
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target slam_to_vision_node[0m
+[0.066s] [ 50%] [32mBuilding CXX object CMakeFiles/slam_to_vision_node.dir/src/slam_to_vision_node.cpp.o[0m
+[6.024s] [100%] [32m[1mLinking CXX executable slam_to_vision_node[0m
+[6.300s] [100%] Built target slam_to_vision_node
+[6.309s] Invoked command in '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp -- -j20 -l20
+[6.317s] Invoking command in '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp
+[6.323s] -- Install configuration: ""
+[6.323s] -- Execute custom install script
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/lib/slam_to_vision_cpp/slam_to_vision_node
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/ament_index/resource_index/package_run_dependencies/slam_to_vision_cpp
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/ament_index/resource_index/parent_prefix_path/slam_to_vision_cpp
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/ament_prefix_path.sh
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/ament_prefix_path.dsv
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/path.sh
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/path.dsv
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.bash
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.sh
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.zsh
+[6.324s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.dsv
+[6.324s] -- Symlinking: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/package.dsv
+[6.336s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/ament_index/resource_index/packages/slam_to_vision_cpp
+[6.336s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/cmake/slam_to_vision_cppConfig.cmake
+[6.336s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/cmake/slam_to_vision_cppConfig-version.cmake
+[6.336s] -- Up-to-date symlink: /home/scurm/MyLivoxWorkSpace/install/slam_to_vision_cpp/share/slam_to_vision_cpp/package.xml
+[6.339s] Invoked command in '/home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp
