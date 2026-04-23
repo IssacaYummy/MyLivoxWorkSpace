@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/scurm/MyLivoxWorkSpace/src/slam_to_vision_cpp
+CMAKE_SOURCE_DIR = /home/scurm/vision_pos_estimate_ws/src/slam_to_vision_cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp
+CMAKE_BINARY_DIR = /home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp
 
 # Utility rule file for slam_to_vision_cpp_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/slam_to_vision_cpp_uninstall.dir/compiler_depend.make
 include CMakeFiles/slam_to_vision_cpp_uninstall.dir/progress.make
 
 CMakeFiles/slam_to_vision_cpp_uninstall:
-	/usr/bin/cmake -P /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 slam_to_vision_cpp_uninstall: CMakeFiles/slam_to_vision_cpp_uninstall
 slam_to_vision_cpp_uninstall: CMakeFiles/slam_to_vision_cpp_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/slam_to_vision_cpp_uninstall.dir/clean:
 .PHONY : CMakeFiles/slam_to_vision_cpp_uninstall.dir/clean
 
 CMakeFiles/slam_to_vision_cpp_uninstall.dir/depend:
-	cd /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/scurm/MyLivoxWorkSpace/src/slam_to_vision_cpp /home/scurm/MyLivoxWorkSpace/src/slam_to_vision_cpp /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp /home/scurm/MyLivoxWorkSpace/build/slam_to_vision_cpp/CMakeFiles/slam_to_vision_cpp_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/scurm/vision_pos_estimate_ws/src/slam_to_vision_cpp /home/scurm/vision_pos_estimate_ws/src/slam_to_vision_cpp /home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp /home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp /home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp/CMakeFiles/slam_to_vision_cpp_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/slam_to_vision_cpp_uninstall.dir/depend
 

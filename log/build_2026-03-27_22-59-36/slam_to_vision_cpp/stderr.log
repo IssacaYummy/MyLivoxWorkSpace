@@ -1,4 +1,0 @@
-[01m[K/home/scurm/MyLivoxWorkSpace/src/slam_to_vision_cpp/src/slam_to_vision_node.cpp:[m[K In member function ‘[01m[Kvoid SlamToVisionNode::odomCallback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/scurm/MyLivoxWorkSpace/src/slam_to_vision_cpp/src/slam_to_vision_node.cpp:48:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KINV_SQRT2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-   48 |   const double [01;35m[KINV_SQRT2[m[K = 1.0 / std::sqrt(2.0);
-      |                [01;35m[K^~~~~~~~~[m[K

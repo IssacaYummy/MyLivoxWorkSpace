@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-32eaed7fe69d160e8b92.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "slam_to_vision_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "slam_to_vision_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-slam_to_vision_cpp_uninstall-b3e6ede561c609bba340.json",
+					"name" : "slam_to_vision_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "slam_to_vision_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-slam_to_vision_node-6aad1d891e36f04f9c06.json",
+					"name" : "slam_to_vision_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-44d12ea3f9c850100682.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp",
+		"source" : "/home/scurm/vision_pos_estimate_ws/src/slam_to_vision_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

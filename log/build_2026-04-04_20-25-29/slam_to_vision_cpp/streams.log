@@ -1,0 +1,36 @@
+[0.007s] Invoking command in '/home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp -- -j20 -l20
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target slam_to_vision_node[0m
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/slam_to_vision_node.dir/src/slam_to_vision_node.cpp.o[0m
+[1.684s] [01m[K/home/scurm/vision_pos_estimate_ws/src/slam_to_vision_cpp/src/slam_to_vision_node.cpp:[m[K In member function ‘[01m[Kvoid SlamToVisionNode::odomCallback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.684s] [01m[K/home/scurm/vision_pos_estimate_ws/src/slam_to_vision_cpp/src/slam_to_vision_node.cpp:36:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kxs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.684s]    36 |     const double [01;35m[Kxs[m[K = msg->pose.pose.position.x;
+[1.684s]       |                  [01;35m[K^~[m[K
+[1.684s] [01m[K/home/scurm/vision_pos_estimate_ws/src/slam_to_vision_cpp/src/slam_to_vision_node.cpp:37:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kys[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.684s]    37 |     const double [01;35m[Kys[m[K = msg->pose.pose.position.y;
+[1.684s]       |                  [01;35m[K^~[m[K
+[1.684s] [01m[K/home/scurm/vision_pos_estimate_ws/src/slam_to_vision_cpp/src/slam_to_vision_node.cpp:38:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kzs[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.684s]    38 |     const double [01;35m[Kzs[m[K = msg->pose.pose.position.z;
+[1.684s]       |                  [01;35m[K^~[m[K
+[5.592s] [100%] [32m[1mLinking CXX executable slam_to_vision_node[0m
+[5.871s] [100%] Built target slam_to_vision_node
+[5.880s] Invoked command in '/home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp -- -j20 -l20
+[5.881s] Invoking command in '/home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp
+[5.887s] -- Install configuration: ""
+[5.887s] -- Installing: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/lib/slam_to_vision_cpp/slam_to_vision_node
+[5.889s] -- Set runtime path of "/home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/lib/slam_to_vision_cpp/slam_to_vision_node" to ""
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/ament_index/resource_index/package_run_dependencies/slam_to_vision_cpp
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/ament_index/resource_index/parent_prefix_path/slam_to_vision_cpp
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/ament_prefix_path.sh
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/ament_prefix_path.dsv
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/path.sh
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/environment/path.dsv
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.bash
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.sh
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.zsh
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/local_setup.dsv
+[5.889s] -- Installing: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/package.dsv
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/ament_index/resource_index/packages/slam_to_vision_cpp
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/cmake/slam_to_vision_cppConfig.cmake
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/cmake/slam_to_vision_cppConfig-version.cmake
+[5.889s] -- Up-to-date: /home/scurm/vision_pos_estimate_ws/install/slam_to_vision_cpp/share/slam_to_vision_cpp/package.xml
+[5.891s] Invoked command in '/home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/scurm/vision_pos_estimate_ws/build/slam_to_vision_cpp
