@@ -47,20 +47,32 @@ private:
     const double qy = msg->pose.pose.orientation.y;
     const double qz = msg->pose.pose.orientation.z;
 
+    // tf2::Quaternion original_q(qx, qy, qz, qw);
+    // double roll, pitch, yaw;
+    // tf2::Matrix3x3(original_q).getRPY(roll, pitch, yaw);
+
+    // // roll  = -roll;
+    // // pitch = -pitch;
+
+    // tf2::Quaternion modified_q;
+    // modified_q.setRPY(roll, pitch, yaw);
+
     tf2::Quaternion original_q(qx, qy, qz, qw);
-    double roll, pitch, yaw;
-    tf2::Matrix3x3(original_q).getRPY(roll, pitch, yaw);
-
-    // roll  = -roll;
-    // pitch = -pitch;
-
-    tf2::Quaternion modified_q;
-    modified_q.setRPY(roll, pitch, yaw);
-
+    
+    // 创建一个绕 Z 轴旋转 90度 (M_PI/2) 的旋转四元数
+    tf2::Quaternion q_rot;
+    q_rot.setRPY(0, 0, M_PI / 2.0);
+     
+    // 左乘进行坐标系旋转 (新姿态 = 旋转矩阵 * 原姿态)
+    tf2::Quaternion modified_q = q_rot * original_q;
+    modified_q.normalize(); // 归一化防止浮点误差
+    
     pose_msg.pose.orientation.w = modified_q.w();
     pose_msg.pose.orientation.x = modified_q.x();
     pose_msg.pose.orientation.y = modified_q.y();
     pose_msg.pose.orientation.z = modified_q.z();
+
+    pose_msg.header.stamp = this->now(); 
 
     vision_pub_->publish(pose_msg);
 
