@@ -24,53 +24,57 @@ public:
     // vel_pub_ = this->create_publisher<geometry_msgs::msg::TwistStamped>(
     //   "/mavros/vision_speed/speed_twist_stamped", 10);
 
+    // 预计算对齐变换矩阵，避免在高频回调中重复构造
+    tf2::Quaternion q_rot;
+    q_rot.setRPY(0.0, 0.0, M_PI / 2.0);   // Rz(+90°): camera_init FLU → ENU
+    align_transform_.setIdentity();
+    align_transform_.setRotation(q_rot);
+
     RCLCPP_INFO(this->get_logger(), "slam_to_vision_cpp node started");
   }
 
 private:
   void odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
   {
-    // 1. 获取 SLAM 的原始位姿 (位置 + 姿态)
+    // 获取 SLAM 的原始位姿 (位置 + 姿态)
     tf2::Transform slam_pose;
     tf2::fromMsg(msg->pose.pose, slam_pose);
 
-    // 2. 根据测试得出的结论，构造一个“纠正矩阵”
-    tf2::Transform align_transform;
-    align_transform.setIdentity(); // 初始化为无变换
+    // 将纠正矩阵应用于 SLAM 位姿 (平移和姿态同时发生正确变换)
+    tf2::Transform enu_pose = align_transform_ * slam_pose;
 
-    tf2::Quaternion q_rot;
-    // 绕Z轴旋转90度 (M_PI/2) 以对齐 MAVROS 的 ENU (注意：此角度需实际手持测试确认方向)
-    q_rot.setRPY(0.0, 0.0, M_PI / 2.0); 
-    align_transform.setRotation(q_rot);
-
-    // 3. 将纠正矩阵应用于 SLAM 位姿 (平移和姿态同时发生正确变换)
-    tf2::Transform enu_pose = align_transform * slam_pose;
-
-    // 4. 打包回 PoseStamped 给 MAVROS
+    // 打包回 PoseStamped 给 MAVROS
     geometry_msgs::msg::PoseStamped pose_msg;
     
-    // 强制对齐 PC 局部时间，避免时间戳飘移
-    pose_msg.header.stamp = this->now(); 
+    // 时间戳说明:
+    //   使用 msg->header.stamp (传感器时间): EKF 时间对齐更准确，需保证
+    //     PC 与飞控时钟同步 (建议使用 chrony 或 mavros timesync)。
+    pose_msg.header.stamp    = msg->header.stamp;
     pose_msg.header.frame_id = "map";
 
     // 将转换后的XYZ和四元数安全、统一地写回pose_msg
     tf2::toMsg(enu_pose, pose_msg.pose);
-
     vision_pub_->publish(pose_msg);
 
-    // // ==================== 速度发布 ====================
-    // // FAST-LIO2 的 twist.twist.linear 为 SLAM 世界坐标系下的速度
-    // // 与位置变换规则完全一致：SLAM(Vx, Vy, Vz) → ENU(Vy, -Vx, Vz)
+    // ── [可选] 同时发布速度，提升 EKF 融合质量 ────────────────
+    // FAST-LIO 的 twist.twist.linear 是 camera_init 世界系下的速度向量，
+    // 需与位置使用相同的 Rz(+90°) 旋转:
+    //   v_enu_x = -v_slam_y  (East  = -SLAM_Vy)  ← 原代码符号有误，已修正
+    //   v_enu_y = +v_slam_x  (North = +SLAM_Vx)  ← 原代码符号有误，已修正
+    //   v_enu_z = +v_slam_z  (Up    = +SLAM_Vz)
+    //
     // geometry_msgs::msg::TwistStamped vel_msg;
-    // vel_msg.header.stamp = msg->header.stamp;
+    // vel_msg.header.stamp    = msg->header.stamp;
     // vel_msg.header.frame_id = "map";  // ENU 世界系，MAVROS 自动转 NED
-
-    // vel_msg.twist.linear.x =  msg->twist.twist.linear.y;  // SLAM Vy → ENU Vx
-    // vel_msg.twist.linear.y = -msg->twist.twist.linear.x;  // SLAM Vx → ENU Vy（取反）
-    // vel_msg.twist.linear.z =  msg->twist.twist.linear.z;  // Z 方向一致
-
+    //
+    // vel_msg.twist.linear.x = -msg->twist.twist.linear.y;  // -SLAM_Vy → ENU Vx (East)
+    // vel_msg.twist.linear.y =  msg->twist.twist.linear.x;  // +SLAM_Vx → ENU Vy (North)
+    // vel_msg.twist.linear.z =  msg->twist.twist.linear.z;  // +SLAM_Vz → ENU Vz (Up)
+    //
     // vel_pub_->publish(vel_msg);
   }
+  
+  tf2::Transform align_transform_;  // 预计算对齐矩阵 Rz(+90°)
 
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
   rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr vision_pub_;
