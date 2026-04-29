@@ -4,6 +4,7 @@
 #include <geometry_msgs/msg/twist_stamped.hpp>   
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2/LinearMath/Matrix3x3.h>
+#include <tf2/LinearMath/Transform.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include <cmath>
 
@@ -29,50 +30,31 @@ public:
 private:
   void odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
   {
+    // 1. 获取 SLAM 的原始位姿 (位置 + 姿态)
+    tf2::Transform slam_pose;
+    tf2::fromMsg(msg->pose.pose, slam_pose);
+
+    // 2. 根据测试得出的结论，构造一个“纠正矩阵”
+    tf2::Transform align_transform;
+    align_transform.setIdentity(); // 初始化为无变换
+
+    tf2::Quaternion q_rot;
+    // 绕Z轴旋转90度 (M_PI/2) 以对齐 MAVROS 的 ENU (注意：此角度需实际手持测试确认方向)
+    q_rot.setRPY(0.0, 0.0, M_PI / 2.0); 
+    align_transform.setRotation(q_rot);
+
+    // 3. 将纠正矩阵应用于 SLAM 位姿 (平移和姿态同时发生正确变换)
+    tf2::Transform enu_pose = align_transform * slam_pose;
+
+    // 4. 打包回 PoseStamped 给 MAVROS
     geometry_msgs::msg::PoseStamped pose_msg;
-    pose_msg.header.stamp = msg->header.stamp;
+    
+    // 强制对齐 PC 局部时间，避免时间戳飘移
+    pose_msg.header.stamp = this->now(); 
     pose_msg.header.frame_id = "map";
 
-    const double xs = msg->pose.pose.position.x;
-    const double ys = msg->pose.pose.position.y;
-    const double zs = msg->pose.pose.position.z;
-
-    // SLAM 世界系 → ENU（MAVROS 内部负责 ENU→NED 转换）
-    pose_msg.pose.position.x =  -ys;
-    pose_msg.pose.position.y =  xs;
-    pose_msg.pose.position.z =  zs;
-
-    const double qw = msg->pose.pose.orientation.w;
-    const double qx = msg->pose.pose.orientation.x;
-    const double qy = msg->pose.pose.orientation.y;
-    const double qz = msg->pose.pose.orientation.z;
-
-    // tf2::Quaternion original_q(qx, qy, qz, qw);
-    // double roll, pitch, yaw;
-    // tf2::Matrix3x3(original_q).getRPY(roll, pitch, yaw);
-
-    // // roll  = -roll;
-    // // pitch = -pitch;
-
-    // tf2::Quaternion modified_q;
-    // modified_q.setRPY(roll, pitch, yaw);
-
-    tf2::Quaternion original_q(qx, qy, qz, qw);
-    
-    // 创建一个绕 Z 轴旋转 90度 (M_PI/2) 的旋转四元数
-    tf2::Quaternion q_rot;
-    q_rot.setRPY(0, 0, M_PI / 2.0);
-     
-    // 左乘进行坐标系旋转 (新姿态 = 旋转矩阵 * 原姿态)
-    tf2::Quaternion modified_q = q_rot * original_q;
-    modified_q.normalize(); // 归一化防止浮点误差
-    
-    pose_msg.pose.orientation.w = modified_q.w();
-    pose_msg.pose.orientation.x = modified_q.x();
-    pose_msg.pose.orientation.y = modified_q.y();
-    pose_msg.pose.orientation.z = modified_q.z();
-
-    pose_msg.header.stamp = this->now(); 
+    // 将转换后的XYZ和四元数安全、统一地写回pose_msg
+    tf2::toMsg(enu_pose, pose_msg.pose);
 
     vision_pub_->publish(pose_msg);
 
